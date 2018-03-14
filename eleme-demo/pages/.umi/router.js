@@ -13,10 +13,10 @@ export default function() {
   <Layout><Switch>
     <Route exact path="/discover.html" component={require('../discover/page.jsx').default} />
     <Route exact path="/home.html" component={require('../home/page.jsx').default} />
-    <Route exact path="/" component={require('../index.js').default} />
+    <Route exact path="/" component={() => React.createElement(require('C:/Users/A456-930MX/AppData/Roaming/npm/node_modules/umi/node_modules/_umi-build-dev@0.10.6@umi-build-dev/lib/Compiling.js').default, { route: '/' })} />
     <Route exact path="/order.html" component={require('../order/page.jsx').default} />
     <Route exact path="/profile.html" component={require('../profile/page.jsx').default} />
-    <Route exact path="/shop.html" component={() => React.createElement(require('C:/Users/A456-930MX/AppData/Roaming/npm/node_modules/umi/node_modules/_umi-build-dev@0.10.6@umi-build-dev/lib/Compiling.js').default, { route: '/shop.html' })} />
+    <Route exact path="/shop.html" component={require('../shop/page.jsx').default} />
     <Route exact path="/index.html" component={() => React.createElement(require('C:/Users/A456-930MX/AppData/Roaming/npm/node_modules/umi/node_modules/_umi-build-dev@0.10.6@umi-build-dev/lib/Compiling.js').default, { route: '/index.html' })} />
   </Switch></Layout>
 </Router>
